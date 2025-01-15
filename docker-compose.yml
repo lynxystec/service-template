@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  postgres_database:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "7000:8080"
