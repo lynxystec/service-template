@@ -2,7 +2,7 @@
 Template for back-end services
 
 # Stack
-- Java
+- Java 21
 - Spring Boot
 - Spring Security
 - Postgres
