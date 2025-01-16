@@ -1,4 +1,4 @@
-# Service Template
+# Service - Template
 Template for back-end services
 
 # Stack
