@@ -18,6 +18,11 @@ spring:
     hibernate:
       ddl-auto: update
 
+  jwt:
+    secret_key: ${JWT_SECRET_KEY}
+    accessTokenValiditySeconds: 1200 # 20 minutes
+    refreshTokenValiditySeconds: 87000 #24+ hours
+
 ---
 
 spring:
@@ -35,6 +40,11 @@ spring:
       ddl-auto: update
     open-in-view: false
 
+  jwt:
+    secret_key: ${JWT_SECRET_KEY}
+    accessTokenValiditySeconds: 1200 # 20 minutes
+    refreshTokenValiditySeconds: 87000 #24+ hours
+
 ---
 
 spring:
@@ -46,3 +56,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+  jwt:
+    secret_key: ${JWT_SECRET_KEY}
+    accessTokenValiditySeconds: 1200 # 20 minutes
+    refreshTokenValiditySeconds: 87000 #24+ hours
