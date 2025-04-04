@@ -8,7 +8,7 @@ Template for back-end services
 - Postgres
 
 # How to run
-    - Set "JWT_SECRET_KEY" env variable
+    - Set "JWT_SECRET_KEY" env variable which should be a hash
 
 # Details
 
@@ -16,3 +16,5 @@ Template for back-end services
 
 
 - The ***GreetingController*** controller is only used to test the login system and can be removed
+
+- The CORS config should probably be changed to suit the client that will consume the service
