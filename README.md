@@ -14,7 +14,6 @@ Template for back-end services
 
 - By default, it is necessary to implement a login system. If the system is not going to use login, it is necessary to release the routes
 
-
 - The ***GreetingController*** controller is only used to test the login system and can be removed
 
 - The CORS config should probably be changed to suit the client that will consume the service
